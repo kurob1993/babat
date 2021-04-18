@@ -1,0 +1,7 @@
+{
+  "name": "babat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
