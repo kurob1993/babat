@@ -1,11 +1,19 @@
 <template>
   <ion-page>
+    
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+        <ion-grid>
+          <ion-row class="ion-justify-content-around">
+            <ion-col size="10"> <ion-title>Tab 1</ion-title> </ion-col>
+            <ion-col size="2"> <DarkMode/> </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-toolbar>
     </ion-header>
+
     <ion-content :fullscreen="true">
+      
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Tab 1</ion-title>
@@ -20,9 +28,20 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import DarkMode from '@/components/DarkModeSwitch.vue';
 
 export default  {
   name: 'Tab1',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { 
+    ExploreContainer,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonPage,
+    DarkMode
+  }
 }
 </script>
+<style>
+</style>
